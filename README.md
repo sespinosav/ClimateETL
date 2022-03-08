@@ -11,3 +11,4 @@ Raw data was save in s3://dfgomezm-datasets/raw/climate/
 After ETL with spark, clean data was save in s3://dfgomezm-datasets/trusted/climate/
 
 ## Video Explication
+Video process ETL past to past:  https://youtu.be/V_FPcRFZ9GE
