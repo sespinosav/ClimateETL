@@ -1,0 +1,27 @@
+Querys Athena
+SELECT * FROM climate 
+WHERE averagetemperature is null
+LIMIT 5;
+
+SELECT country,dt, MAX(averagetemperature) as max_climate FROM climate
+GROUP BY dt,country
+order by max_climate DESC
+LIMIT 3;
+
+SELECT country,dt, MIN(averagetemperature) as min_climate FROM climate
+GROUP BY dt,country
+order by min_climate ASC
+LIMIT 3;
+
+
+Querys Hive
+
+SELECT country, AVG(averagetemperature) as avg_climate FROM climate
+GROUP BY country
+order by avg_climate DESC
+LIMIT 3;
+
+SELECT city, AVG(averagetemperature) as avg_climate FROM climate
+GROUP BY city
+order by avg_climate ASC
+LIMIT 3;
